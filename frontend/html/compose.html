@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메일 작성</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/compose.css" />
+  </head>
+  <body>
+    <iframe src="sidebar.html" class="sidebar-frame" frameborder="0"></iframe>
+
+    <div class="container">
+      <div class="header">
+        <h1>새 메일 작성</h1>
+        <div class="user-info">
+          <span class="user-email"></span>
+          <button class="logout-button">로그아웃</button>
+        </div>
+      </div>
+
+      <div class="error-message"></div>
+
+      <form class="compose-form">
+        <div class="form-group">
+          <label for="to">받는 사람</label>
+          <input
+            type="email"
+            id="to"
+            name="to"
+            required
+            placeholder="example@domain.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">제목</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            placeholder="메일 제목을 입력하세요"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="body">내용</label>
+          <textarea
+            id="body"
+            name="body"
+            required
+            rows="12"
+            placeholder="메일 내용을 입력하세요..."
+          ></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="cancel-button">취소</button>
+          <button type="submit" class="send-button">보내기</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/compose.js"></script>
+  </body>
+</html>

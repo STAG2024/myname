@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/jeongwoo/myname/backend/logs/.99214a514a7685a88d3e9cd11d953fbc43d54992-audit.json",
+    "files": [
+        {
+            "date": 1748411563028,
+            "name": "/Users/jeongwoo/myname/backend/logs/application-2025-05-28.log",
+            "hash": "31732c006125b97741a9dce8ca5be7c6407a1019c4e329a32cd2f6cd951d1901"
+        }
+    ],
+    "hashType": "sha256"
+}

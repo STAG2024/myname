@@ -1,0 +1,142 @@
+/* inbox.css */
+
+.sidebar-frame {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.container {
+  margin-left: 240px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-email {
+  color: #666;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  background-color: #f1f3f4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #e8eaed;
+}
+
+.toolbar {
+  margin-bottom: 24px;
+}
+
+.compose-button {
+  padding: 12px 24px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.compose-button:hover {
+  background-color: #1557b0;
+}
+
+.email-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.email-item {
+  display: grid;
+  grid-template-columns: 200px 1fr 100px;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.email-item.unread {
+  background-color: #f2f6fc;
+  font-weight: 500;
+}
+
+.email-item.unread .email-sender,
+.email-item.unread .email-subject {
+  font-weight: 600;
+  color: #202124;
+}
+
+.email-item.read {
+  background-color: #ffffff;
+}
+
+.email-item.read .email-sender,
+.email-item.read .email-subject {
+  font-weight: normal;
+  color: #5f6368;
+}
+
+.email-item:hover {
+  background-color: #f8f9fa;
+}
+
+.email-item:last-child {
+  border-bottom: none;
+}
+
+.email-sender {
+  font-weight: 500;
+  color: #202124;
+}
+
+.email-subject {
+  color: #5f6368;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.email-date {
+  color: #5f6368;
+  text-align: right;
+  font-size: 12px;
+}
+
+.no-email {
+  padding: 32px;
+  text-align: center;
+  color: #5f6368;
+}
+
+.error-message {
+  padding: 16px;
+  color: #d93025;
+  text-align: center;
+}

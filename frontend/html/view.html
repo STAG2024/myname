@@ -1,0 +1,38 @@
+<!-- 경로: /frontend/html/view.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메일 보기</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/view.css" />
+  </head>
+  <body>
+    <iframe src="sidebar.html" class="sidebar-frame" frameborder="0"></iframe>
+
+    <div class="container">
+      <div class="header">
+        <div class="header-left">
+          <a href="inbox.html" class="back-button">← 받은편지함</a>
+        </div>
+        <div class="user-info">
+          <span class="user-email"></span>
+          <button class="logout-button">로그아웃</button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button class="reply-button">답장</button>
+        <button class="delete-button">삭제</button>
+      </div>
+
+      <div class="mail-content">
+        <!-- 메일 내용이 동적으로 추가됩니다 -->
+      </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/view.js"></script>
+  </body>
+</html>

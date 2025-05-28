@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>받은편지함</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/inbox.css" />
+  </head>
+  <body>
+    <iframe src="sidebar.html" class="sidebar-frame" frameborder="0"></iframe>
+
+    <div class="container">
+      <div class="header">
+        <h1>받은편지함</h1>
+        <div class="user-info">
+          <span class="user-email"></span>
+          <button class="logout-button">로그아웃</button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button class="compose-button">새 메일 작성</button>
+      </div>
+
+      <ul class="email-list">
+        <!-- 이메일 목록이 여기에 동적으로 추가됩니다 -->
+      </ul>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/inbox.js"></script>
+  </body>
+</html>
